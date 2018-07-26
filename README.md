@@ -47,7 +47,7 @@ SuperTerm 和 PeerServer 只会在建立连接的时候需要 HelperServer 参�
 
 如果觉得插件不错，支持作者：
 
-<img src="http://blog.evalbug.com/images/wechatimg.png" style="margin: 0 auto;max-width: 285px;">
+<img src="./wxpay.png" width="325px">
 
 ## 相关链接
 
