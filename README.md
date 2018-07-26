@@ -27,6 +27,11 @@
     将插件目录拷贝至 `antSword/antData/plugins/` 目录下即安装成功
 
 
+## 适用前提条件
+
+1. 目标机器支持 udp 协议，并且 udp 可外连 (比如可以访问 `8.8.8.8:53`)
+2. 目标所在的 Nat 为 `Full Cone(完全圆锥型)`,`Address Restricted Cone(地址限制圆锥型)`, `Port Restricted Cone(端口限制圆锥型)`。不支持 `Symmetric(对称型)`，遇到这种的，老老实实上 `nc`。
+
 ## 使用
 
 1. 将 [servers](./servers/) 目录下对应的 peerserver 上传到目标 `/tmp/` 目录下，并重命名为 `peerserver`
@@ -42,6 +47,12 @@
 SuperTerm 和 PeerServer 只会在建立连接的时候需要 HelperServer 参与，之后不会有业务数据发向 HelperServer
 
 可以使用公共的 HelperServer，也可以自己用 vps 搭建
+
+## 已知问题
+
+1. 不支持 `Symmetric NAT(对称型)`，遇到这种的，老老实实上 `nc`。
+2. 不能保证 100% 成功，可以多试几次。
+3. 暂不支持 Windows。
 
 ## 其它
 

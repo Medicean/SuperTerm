@@ -1,0 +1,17 @@
+{
+  "name": "超级终端",
+  "name_en": "SuperTerm",
+  "main": "index.js",
+  "icon": "terminal",
+  "version": "0.1",
+  "description": "交互式终端, 支持NAT 穿透",
+  "description_en": "create interactive shell, support nat hole punching",
+  "author": {
+    "name": "Medici.Yan",
+    "email": "Medici.Yan@gmail.com"
+  },
+  "category": "内网工具",
+  "category_en": "Intranet",
+  "multiple": false,
+  "scripts": ["php"]
+}
