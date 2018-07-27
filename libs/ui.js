@@ -10,13 +10,13 @@ const child_process = require("child_process");
 
 class UI {
   constructor(opt){
-    if(antSword.remote.process.platform == "windows"){
-      toastr.error(LANG['error_not_support_windows'], antSword['language']['toastr']['error']);
-      return {
-        onStart: (func)=>{},
-        onAbout: () => {}
-      }
-    }
+    // if(antSword.remote.process.platform == "win32"){
+    //   toastr.error(LANG['error_not_support_windows'], antSword['language']['toastr']['error']);
+    //   return {
+    //     onStart: (func)=>{},
+    //     onAbout: () => {}
+    //   }
+    // }
 
     this.shellip = opt["ip"];
     this.statuschecker = null;
@@ -209,7 +209,7 @@ class UI {
           antSword['storage']('superterm_ts_address', formvals['ts_address']);
           antSword['storage']('superterm_ts_port', formvals['ts_port']);
           var clientpath = path.join(__dirname, `../clients/client_${antSword.remote.process.platform}_${antSword.remote.process.arch}`)
-          if(antSword.remote.process.platform == "windows"){
+          if(antSword.remote.process.platform == "win32"){
             clientpath = clientpath + ".exe";
           }
           var hash = String(Math.random()).substr(2, 10);
