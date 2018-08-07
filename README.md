@@ -48,6 +48,8 @@ SuperTerm 和 PeerServer 只会在建立连接的时候需要 HelperServer 参�
 
 可以使用公共的 HelperServer，也可以自己用 vps 搭建
 
+HelperServer [下载地址](https://github.com/Medicean/SuperTerm/releases/tag/helperserver-v0.0.6)
+
 ## 已知问题
 
 1. 不支持 `Symmetric NAT(对称型)`，遇到这种的，老老实实上 `nc`。
@@ -55,6 +57,8 @@ SuperTerm 和 PeerServer 只会在建立连接的时候需要 HelperServer 参�
 3. 暂不支持 Windows。
 
 ## 其它
+
+> 仓促做完了自己两年前的设想，整个插件还不够稳定，本仓库会一直更新迭代，直到相对稳定。bin 程序等源码重新整理之后再放出来
 
 如果觉得插件不错，支持作者：
 
