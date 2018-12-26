@@ -17,7 +17,7 @@ module.exports = {
     help:{
         title: "Help",
         text: `<ol>
-        <li>Upload the corresponding peerserver in the <a href="javascript:antSword.shell.showItemInFolder('${serverspath}');">servers</a> directory to the target /tmp/ directory and rename it to peerserver</li>
+        <li>Upload the corresponding peerserver in the <a href="javascript:antSword.shell.showItemInFolder('${serverspath.replace(/\\/g,"\\\\")}');">servers</a> directory to the target /tmp/ directory and rename it to peerserver</li>
 <li>Run Command on the target machine: chmod +x /tmp/peerserver</li>
 <li>After filling in the tunnel assistance server address and port, click the "Start" button.</li>
 <li>Do not close the control panel. In the "Shell Manager" interface, select the corresponding target and load the "SuperTerm" plugin</li>

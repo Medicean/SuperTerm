@@ -17,7 +17,7 @@ module.exports = {
     help:{
         title: "使用帮助",
         text: `<ol>
-        <li>将 <a href="javascript:antSword.shell.showItemInFolder('${serverspath}');">servers</a> 目录下对应的 peerserver 上传到目标 /tmp/目录下，并重命名为 peerserver</li>
+        <li>将 <a href="javascript:antSword.shell.showItemInFolder('${serverspath.replace(/\\/g, "\\\\")}');">servers</a> 目录下对应的 peerserver 上传到目标 /tmp/目录下，并重命名为 peerserver</li>
 <li>在目标机器上执行: chmod +x /tmp/peerserver</li>
 <li>填写隧道辅助服务器地址和端口后，点击「启动」按钮</li>
 <li>不要关闭控制台面板，在「Shell管理」界面中，选择对应目标，加载「超级终端」插件</li>
