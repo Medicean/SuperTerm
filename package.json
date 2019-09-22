@@ -3,7 +3,7 @@
   "name_en": "SuperTerm",
   "main": "index.js",
   "icon": "terminal",
-  "version": "0.2",
+  "version": "0.3",
   "description": "交互式终端, 支持NAT 穿透",
   "description_en": "create interactive shell, support nat hole punching",
   "author": {
